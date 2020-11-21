@@ -1,0 +1,187 @@
+{
+ "nextId": 14,
+ "weather_history_data": [
+  {
+   "name": "lima",
+   "password": "lima1254$",
+   "id": 1,
+   "city": "Lima",
+   "country": "Peru",
+   "time_data": "2020-11-13 12:24",
+   "weather_status": {
+    "current_status": [
+     "Partly cloudy"
+    ],
+    "temperature": "19 °C"
+   }
+  },
+  {
+   "name": "California",
+   "password": "sdf123&$",
+   "id": 2,
+   "city": "Sacramento",
+   "country": "United States of America",
+   "time_data": "2020-11-13 09:56",
+   "weather_status": {
+    "current_status": [
+     "Overcast"
+    ],
+    "temperature": "11 °C"
+   }
+  },
+  {
+   "name": "Julia",
+   "password": "julia12345",
+   "id": 3,
+   "city": "Moscow",
+   "country": "Russia",
+   "time_data": "2020-11-14 12:31",
+   "weather_status": {
+    "current_status": [
+     "Overcast"
+    ],
+    "temperature": "2 °C"
+   }
+  },
+  {
+   "name": "Rabia",
+   "password": "Rabia12345",
+   "id": 4,
+   "city": "Izmir",
+   "country": "Turkey",
+   "time_data": "2020-11-14 13:34",
+   "weather_status": {
+    "current_status": [
+     "Partly cloudy"
+    ],
+    "temperature": "18 °C"
+   }
+  },
+  {
+   "name": "sKazimi",
+   "password": "panjshir",
+   "id": 5,
+   "city": "Panjshir",
+   "country": "Afghanistan",
+   "time_data": "2020-11-14 15:42",
+   "weather_status": {
+    "current_status": [
+     "Overcast"
+    ],
+    "temperature": "1 °C"
+   }
+  },
+  {
+   "name": "Jakarta",
+   "password": "Jakarta12345",
+   "id": 6,
+   "city": "Jakarta",
+   "country": "Indonesia",
+   "time_data": "2020-11-14 19:02",
+   "weather_status": {
+    "current_status": [
+     "Patchy rain possible"
+    ],
+    "temperature": "34 °C"
+   }
+  },
+  {
+   "name": "London",
+   "password": "london12345",
+   "id": 7,
+   "city": "London",
+   "country": "United Kingdom",
+   "time_data": "2020-11-14 13:50",
+   "weather_status": {
+    "current_status": [
+     "Light Rain"
+    ],
+    "temperature": "15 °C"
+   }
+  },
+  {
+   "name": "Trump",
+   "password": "Trump12345",
+   "id": 8,
+   "city": "Los Angeles",
+   "country": "United States of America",
+   "time_data": "2020-11-14 05:58",
+   "weather_status": {
+    "current_status": [
+     "Clear"
+    ],
+    "temperature": "12 °C"
+   }
+  },
+  {
+   "name": "Khalil",
+   "password": "Khalil12345",
+   "id": 9,
+   "city": "Ghazni",
+   "country": "Afghanistan",
+   "time_data": "2020-11-21 16:57",
+   "weather_status": {
+    "current_status": [
+     "Partly cloudy"
+    ],
+    "temperature": "5 °C"
+   }
+  },
+  {
+   "name": "Khalil",
+   "password": "Khalil12345",
+   "id": 10,
+   "city": "London",
+   "country": "United Kingdom",
+   "time_data": "2020-11-21 13:11",
+   "weather_status": {
+    "current_status": [
+     "Overcast"
+    ],
+    "temperature": "13 °C"
+   }
+  },
+  {
+   "name": "Khalil",
+   "password": "Khalil12345",
+   "id": 11,
+   "city": "Ottawa",
+   "country": "Canada",
+   "time_data": "2020-11-21 08:31",
+   "weather_status": {
+    "current_status": [
+     "Partly cloudy"
+    ],
+    "temperature": "3 °C"
+   }
+  },
+  {
+   "name": "Khalil",
+   "password": "Khalil12345",
+   "id": 12,
+   "city": "Dushanbe",
+   "country": "Tajikistan",
+   "time_data": "2020-11-21 18:46",
+   "weather_status": {
+    "current_status": [
+     "Sunny"
+    ],
+    "temperature": "4 °C"
+   }
+  },
+  {
+   "name": "Khalil",
+   "password": "Khalil12345",
+   "id": 13,
+   "city": "Stockholm",
+   "country": "Sweden",
+   "time_data": "2020-11-21 23:18",
+   "weather_status": {
+    "current_status": [
+     "Partly cloudy"
+    ],
+    "temperature": "7 °C"
+   }
+  }
+ ]
+}

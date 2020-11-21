@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./about.css">
+    <title>FEEDBACK</title>
+</head>
+
+<body>
+
+    <header id="contact-header">
+        <h1>
+            Please contact me for adding more features and for your personal ideas, Thank you
+        </h1>
+    </header>
+
+    <main>
+        <article>
+            <section class="form-section">
+                <form action="/api/messages" method="POST">
+
+                    <div class="label">
+                        <label for="name">Name</label>
+                    </div>
+
+                    <input type="text" id="name" name="name" placeholder="Enter your name"> <br>
+                    <div class="label">
+                        <label for="subject">Subject</label>
+                    </div>
+
+                    <input type="text" id="subject" name="subject" placeholder="What is your message about?"> <br>
+                    <div class="label">
+                        <label for="email">Email</label>
+                    </div>
+
+                    <input type="email" id="email" name="email" placeholder="Enter your email address"> <br>
+                    <div class="label">
+                        <label for="message">Message</label>
+                    </div>
+
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Write me your message please"></textarea> <br>
+                    <button type="submit">Submit</button> <br>
+
+                </form>
+            </section>
+
+        </article>
+    </main>
+    <!--        Footer of the website       -->
+
+    <footer>
+        <section class="about-footer">
+            <h4>
+                <a href="./index.html">HOME</a>
+            </h4>
+            <h4>
+                <a href="./about-app.html">ABOUT THIS APP</a>
+            </h4>
+            <h4>
+                <a href="./about-me.html">ABOUT ME</a>
+            </h4>
+        </section>
+        <section class="first-footer-section">
+            <h3>
+                &copy; Created by Sayed Kazimi | 2020
+            </h3>
+
+        </section>
+    </footer>
+    <script src="./apps/users-feedback.js"></script>
+</body>
+
+</html>

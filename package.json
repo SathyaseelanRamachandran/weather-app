@@ -1,0 +1,26 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "my first weather app using two weather API's, weatherstack and openweather.org. you can get the current weather, forecast of five days, save the weather to weather history by your name, change your name in the database, get all your saved weather history, delete your saved weather history",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && node index.js",
+    "dev": "nodemon index.js",
+    "heroku-postbuild": "npm install"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "author": "Sayed Abdul Khalil, Kazimi",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "tv4": "^1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

@@ -1,0 +1,26 @@
+{
+	"nextId": 4,
+	"messages": [
+		{
+			"id": 1,
+			"name": "Sayed",
+			"subject": "Great job",
+			"email": "sk@yahoo.com",
+			"message": "Thank you for creating such an amazing weather app"
+		},
+		{
+			"id": 2,
+			"name": "Karen",
+			"subject": "Good job",
+			"email": "karen@gmail.com",
+			"message": "Hello there,\r\n\r\nThank you for creating such an amazing weather app.\r\nThis is really helpful!\r\n\r\nA lot of success!"
+		},
+		{
+			"id": 3,
+			"name": "Tamim",
+			"subject": "appreciate",
+			"email": "tamim@ymail.com",
+			"message": "Thank you. your app is very usefull"
+		}
+	]
+}

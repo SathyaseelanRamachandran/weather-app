@@ -1,0 +1,266 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: teal;
+}
+main article {
+	width: 60%;
+	margin-left: 20%;
+	background-color: turquoise;
+	padding: 2%;
+}
+/*
+	contact form
+
+*/
+
+section.form-section form div.label {
+	background-color: rgba(11, 13, 49, 0.8);
+	color: #fff;
+	padding: 8px;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 8px;
+	margin-bottom: 6px;
+	width: 92%;
+}
+section.form-section form input {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding: 8px;
+	border-radius: 8px;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 14px;
+	width: 92%;
+}
+section.form-section form textarea {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding: 4px;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 10px;
+	width: 93%;
+	border-radius: 8px;
+}
+section.form-section form button {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding: 4px;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 10px;
+	width: 30%;
+	cursor: pointer;
+	margin-left: 65%;
+	border-radius: 8px;
+}
+footer,
+header {
+	padding: 2vw;
+	background-color: rgb(2, 3, 39);
+	text-align: center;
+	color: white;
+}
+
+footer section.about-footer {
+	display: flex;
+	flex-direction: row;
+	margin-left: 20%;
+	width: 60%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer section.about-footer h4 {
+	padding: 1vw;
+	border: 1px solid rgba(40, 43, 102, 0.9);
+	background-color: rgba(11, 13, 49, 0.8);
+	border-radius: 1vw;
+	width: 130px;
+}
+footer section.about-footer h4 a {
+	text-decoration: none;
+	color: white;
+}
+
+@media (max-width: 390px) and (min-width: 230px) {
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: rgb(28, 173, 173);
+		color: #fff;
+	}
+	main article {
+		width: 90%;
+		margin-left: 3%;
+		background-color: rgba(5, 53, 53, 0.5);
+		padding: 2%;
+	}
+	/*
+		contact form
+	
+	*/
+	header#contact-header h1 {
+		font-size: 18px;
+	}
+	section.form-section form div.label {
+		background-color: rgba(11, 13, 49, 0.8);
+		color: #fff;
+		padding: 8px;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 8px;
+		margin-bottom: 6px;
+		width: 90%;
+	}
+	section.form-section form input {
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+		padding: 8px;
+		border-radius: 8px;
+		font-weight: bold;
+		font-size: 11px;
+		margin-bottom: 14px;
+		width: 90%;
+	}
+	section.form-section form textarea {
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+		padding: 4px;
+		font-weight: bold;
+		font-size: 18px;
+		margin-bottom: 10px;
+		width: 91%;
+		border-radius: 8px;
+	}
+	section.form-section form button {
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+		padding: 4px;
+		font-weight: bold;
+		font-size: 18px;
+		margin-bottom: 10px;
+		width: 30%;
+		cursor: pointer;
+		margin-left: 65%;
+		border-radius: 8px;
+	}
+	footer,
+	header {
+		padding: 2vw;
+		background-color: rgb(2, 3, 39);
+		text-align: center;
+		color: white;
+	}
+
+	footer section.about-footer {
+		display: flex;
+		flex-direction: row;
+		margin-left: 5%;
+		width: 90%;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	footer section.about-footer h4 {
+		font-size: 11px;
+		margin-left: 7px;
+		padding: 1vw;
+		border: 1px solid rgba(40, 43, 102, 0.9);
+		background-color: rgba(11, 13, 49, 0.8);
+		border-radius: 1vw;
+		width: 150px;
+	}
+}
+
+@media (max-width: 530px) and (min-width: 390px) {
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: rgb(43, 160, 160);
+		color: #fff;
+	}
+	main article {
+		width: 90%;
+		margin-left: 3%;
+		background-color: rgba(211, 231, 231, 0.5);
+		padding: 2%;
+	}
+	/*
+		contact form
+	
+	*/
+	header#contact-header h1 {
+		font-size: 18px;
+	}
+	section.form-section form div.label {
+		background-color: rgba(11, 13, 49, 0.8);
+		color: #fff;
+		padding: 8px;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 8px;
+		margin-bottom: 6px;
+		width: 90%;
+	}
+	section.form-section form input {
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+		padding: 8px;
+		border-radius: 8px;
+		font-weight: bold;
+		font-size: 14px;
+		margin-bottom: 14px;
+		width: 90%;
+	}
+	section.form-section form textarea {
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+		padding: 4px;
+		font-weight: bold;
+		font-size: 18px;
+		margin-bottom: 10px;
+		width: 91%;
+		border-radius: 8px;
+	}
+	section.form-section form button {
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+		padding: 4px;
+		font-weight: bold;
+		font-size: 18px;
+		margin-bottom: 10px;
+		width: 30%;
+		cursor: pointer;
+		margin-left: 65%;
+		border-radius: 8px;
+	}
+	footer,
+	header {
+		padding: 2vw;
+		background-color: rgb(2, 3, 39);
+		text-align: center;
+		color: white;
+	}
+
+	footer section.about-footer {
+		display: flex;
+		flex-direction: row;
+		margin-left: 5%;
+		width: 90%;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	footer section.about-footer h4 {
+		font-size: 13px;
+		margin-left: 7px;
+		padding: 1vw;
+		border: 1px solid rgba(40, 43, 102, 0.9);
+		background-color: rgba(11, 13, 49, 0.8);
+		border-radius: 1vw;
+		width: 150px;
+	}
+}

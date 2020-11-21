@@ -1,0 +1,754 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("./images/6.jpg");
+	background-color: rgba(44, 65, 158, 0.5);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+section.section-weather-info {
+	display: grid;
+	grid-template-columns: 30% 65%;
+	justify-content: space-around;
+}
+
+section.search-city-section {
+	background-color: rgba(17, 197, 122, 0.3);
+	margin-top: 12%;
+	border-radius: 1vw;
+	height: 20vh;
+}
+section.search-city-section form input {
+	margin-left: 3%;
+	padding: 0.6vw;
+	font-size: 1.2vw;
+	border-radius: 1vw;
+	background-color: #fff;
+	border: blue 1px solid;
+}
+section.search-city-section h2 {
+	margin-left: 3%;
+}
+section.search-city-section form input[type="button"]:hover {
+	cursor: pointer;
+	background-color: rgba(78, 73, 6, 0.3);
+	border: 1px solid rgba(255, 238, 0, 0.9);
+	color: white;
+}
+section.weather-display-box {
+	display: grid;
+	grid-template-columns: auto;
+	background-color: rgba(125, 130, 200, 0.8);
+	border-radius: 1vw;
+	margin-top: 3%;
+}
+
+section.current-info {
+	text-align: center;
+}
+
+section.current-info section {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: space-around;
+}
+
+#weather-status-icon span img {
+	background: transparent;
+	border-radius: 0.9vw;
+}
+section.date-time-degree {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: space-around;
+	text-align: center;
+}
+/*
+	weather forecast
+*/
+h4#forecast-additional-info span {
+	text-align: left;
+}
+section.weather-forecast {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 2%;
+}
+
+section.weather-forecast section {
+	border: blue 1px solid;
+	padding: 1%;
+	text-align: center;
+	border-radius: 1vw;
+	background-color: rgba(17, 197, 122, 0.3);
+}
+
+#additional-weather-info {
+	text-align: left;
+}
+#additional-weather-info span {
+	margin-bottom: 5%;
+}
+/*
+	sections: save, display, delete weather history and change your name
+*/
+section.database-interaction {
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 3%;
+}
+
+section.database-interaction section {
+	padding: 1vw;
+	margin-top: 3%;
+	border-radius: 1vw;
+	background-color: rgba(35, 82, 151, 0.8);
+}
+
+section.database-interaction section form input {
+	padding: 0.5vw;
+	font-size: 0.8vw;
+	border-radius: 0.9vw;
+}
+section.database-interaction section form input[type="button"] {
+	cursor: pointer;
+	padding: 0.6vw;
+	font-weight: bold;
+}
+
+section.database-interaction section form label {
+	padding: 0.7vw;
+	font-size: 1vw;
+	border-radius: 0.9vw;
+	background-color: rgba(19, 1, 13, 0.8);
+}
+/*
+		render table sections
+*/
+section#user-history-box {
+	color: white;
+	padding: 2%;
+	text-align: center;
+	margin-left: 4%;
+}
+section#user-history-box table {
+	background-color: rgba(241, 179, 8, 0.6);
+}
+section#user-history-box table td {
+	border: 1px rgb(255, 217, 0) solid;
+	padding: 0.7vw;
+	width: 15%;
+}
+section#user-history-box table th {
+	background-color: rgb(241, 113, 8);
+	border: 1px rgb(255, 208, 0) solid;
+	padding: 1vw;
+	width: 15%;
+}
+/*
+		FOOTER OF THE WEBSITE
+*/
+footer {
+	padding: 2vw;
+	background-color: rgb(2, 3, 39);
+	text-align: center;
+	color: white;
+}
+
+footer section.about-footer {
+	display: flex;
+	flex-direction: row;
+	margin-left: 20%;
+	width: 60%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer section.about-footer h4 {
+	padding: 1vw;
+	border: 1px solid rgba(40, 43, 102, 0.9);
+	background-color: rgba(11, 13, 49, 0.8);
+	border-radius: 1vw;
+	width: 130px;
+}
+footer section.about-footer h4 a {
+	text-decoration: none;
+	color: white;
+}
+
+/*
+	media queries
+
+*/
+
+@media (max-width: 390px) and (min-width: 230px) {
+	section.section-weather-info {
+		display: grid;
+		grid-template-columns: 100%;
+	}
+
+	section.search-city-section {
+		background-color: rgba(17, 197, 122, 0.3);
+		margin-top: 4%;
+		border-radius: 1vw;
+		height: 11vh;
+	}
+	section.search-city-section h2 {
+		font-size: 12px;
+	}
+	section.search-city-section form input {
+		margin-left: 3%;
+		padding: 0.7vw;
+		font-size: 11px;
+		border-radius: 1vw;
+		background-color: #fff;
+		border: blue 1px solid;
+	}
+	section.search-city-section h2 {
+		margin-left: 3%;
+	}
+	section.search-city-section form input[type="button"]:hover {
+		cursor: pointer;
+		background-color: rgba(126, 118, 17, 0.3);
+		border: 1px solid rgba(255, 238, 0, 0.9);
+		color: white;
+	}
+	section.weather-display-box {
+		background-color: rgba(125, 130, 200, 0.8);
+		border-radius: 1vw;
+		margin-top: 3%;
+	}
+
+	section.current-info {
+		text-align: center;
+	}
+
+	section.current-info h2 {
+		font-size: 13px;
+	}
+	section.current-info section h3,
+	section.date-time-degree h3,
+	section.date-time-degree section h3 {
+		font-size: 10px;
+	}
+	section.current-info section h4,
+	section.date-time-degree section h4 {
+		font-size: 9px;
+	}
+	section.current-info section {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		justify-content: space-around;
+	}
+
+	#weather-status-icon span img {
+		background: transparent;
+		border-radius: 0.9vw;
+	}
+	section.date-time-degree {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		justify-content: space-around;
+		text-align: center;
+	}
+	/*
+		weather forecast
+	*/
+	h4#forecast-additional-info span {
+		text-align: left;
+	}
+	section.weather-forecast {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-bottom: 2%;
+	}
+
+	section.weather-forecast section {
+		border: blue 1px solid;
+		padding: 1%;
+		text-align: center;
+		border-radius: 1vw;
+		background-color: rgba(17, 197, 122, 0.3);
+	}
+	section.weather-forecast section h5 {
+		font-size: 9px;
+	}
+	#additional-weather-info {
+		text-align: left;
+	}
+	#additional-weather-info span {
+		margin-bottom: 5%;
+	}
+	/*
+		sections: save, display, delete weather history and change your name
+	*/
+	section.database-interaction {
+		display: grid;
+		grid-template-columns: auto;
+		align-items: center;
+		align-content: center;
+		margin-bottom: 3%;
+	}
+
+	section.database-interaction section {
+		padding: 1vw;
+		margin-top: 3%;
+		border-radius: 1vw;
+		background-color: rgba(35, 82, 151, 0.8);
+	}
+	section.database-interaction section form {
+		display: grid;
+		grid-template-columns: auto;
+		justify-content: space-around;
+	}
+	section.database-interaction section form * {
+		margin-bottom: 7px;
+	}
+	section.database-interaction section h3 {
+		font-size: 12px;
+	}
+	section.database-interaction section form input {
+		padding: 4px;
+		font-size: 12px;
+		border-radius: 0.9vw;
+	}
+	section.database-interaction section form input[type="button"] {
+		cursor: pointer;
+		padding: 5px;
+		font-weight: bold;
+	}
+
+	section.database-interaction section form label {
+		padding: 5px;
+		font-size: 13px;
+		border-radius: 0.9vw;
+		background-color: rgba(19, 1, 13, 0.8);
+	}
+	/*
+			render table sections
+	*/
+	section#user-history-box {
+		color: white;
+		padding: 2%;
+		text-align: center;
+	}
+	section#user-history-box table {
+		background-color: rgba(241, 179, 8, 0.6);
+	}
+	section#user-history-box table td {
+		border: 1px rgb(255, 217, 0) solid;
+		padding: 0.5vw;
+		font-size: 9px;
+	}
+	section#user-history-box table th {
+		background-color: rgb(241, 113, 8);
+		border: 1px rgb(255, 208, 0) solid;
+		padding: 0.7vw;
+		font-size: 10px;
+	}
+	/*
+			FOOTER OF THE WEBSITE
+	*/
+	footer {
+		padding: 2vw;
+		background-color: rgb(2, 3, 39);
+		text-align: center;
+		color: white;
+	}
+
+	footer section.about-footer {
+		display: flex;
+		flex-direction: row;
+		margin-left: 5%;
+		width: 90%;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	footer section.about-footer h4 {
+		font-size: 11px;
+		margin-left: 7px;
+		padding: 1vw;
+		border: 1px solid rgba(40, 43, 102, 0.9);
+		background-color: rgba(11, 13, 49, 0.8);
+		border-radius: 1vw;
+		width: 150px;
+	}
+}
+
+/*
+		for devices with max width screen of 530px
+
+*/
+
+@media (max-width: 530px) and (min-width: 390px) {
+	section.section-weather-info {
+		display: grid;
+		grid-template-columns: 100%;
+	}
+
+	section.search-city-section {
+		background-color: rgba(17, 197, 122, 0.3);
+		margin-top: 4%;
+		border-radius: 1vw;
+		height: 11vh;
+	}
+	section.search-city-section h2 {
+		font-size: 18px;
+		margin-left: 3%;
+	}
+	section.search-city-section form input {
+		margin-left: 3%;
+		padding: 0.7vw;
+		font-size: 17px;
+		border-radius: 1vw;
+		background-color: #fff;
+		border: blue 1px solid;
+	}
+	section.weather-display-box {
+		background-color: rgba(125, 130, 200, 0.8);
+		border-radius: 1vw;
+		margin-top: 3%;
+	}
+
+	section.current-info {
+		text-align: center;
+	}
+
+	section.current-info h2 {
+		font-size: 18px;
+	}
+	section.current-info section h3,
+	section.date-time-degree h3,
+	section.date-time-degree section h3 {
+		font-size: 16px;
+	}
+	section.current-info section h4,
+	section.date-time-degree section h4 {
+		font-size: 15px;
+	}
+	section.current-info section {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		justify-content: space-around;
+	}
+
+	#weather-status-icon span img {
+		background: transparent;
+		border-radius: 0.9vw;
+	}
+	section.date-time-degree {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		justify-content: space-around;
+		text-align: center;
+	}
+	/*
+		weather forecast
+	*/
+	h4#forecast-additional-info span {
+		text-align: left;
+	}
+	section.weather-forecast {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-bottom: 2%;
+	}
+
+	section.weather-forecast section {
+		border: blue 1px solid;
+		padding: 1%;
+		text-align: center;
+		border-radius: 1vw;
+		background-color: rgba(17, 197, 122, 0.3);
+	}
+	section.weather-forecast section h5 {
+		font-size: 14px;
+	}
+	#additional-weather-info {
+		text-align: left;
+	}
+	#additional-weather-info span {
+		margin-bottom: 5%;
+	}
+	/*
+		sections: save, display, delete weather history and change your name
+	*/
+	section.database-interaction {
+		display: grid;
+		grid-template-columns: auto;
+		align-items: center;
+		align-content: center;
+		margin-bottom: 3%;
+	}
+
+	section.database-interaction section {
+		padding: 1vw;
+		margin-top: 3%;
+		border-radius: 1vw;
+		background-color: rgba(35, 82, 151, 0.8);
+	}
+	section.database-interaction section form {
+		display: grid;
+		grid-template-columns: auto;
+		justify-content: space-around;
+	}
+	section.database-interaction section form * {
+		margin-bottom: 7px;
+	}
+	section.database-interaction section h3 {
+		font-size: 18px;
+	}
+	section.database-interaction section form input {
+		padding: 4px;
+		font-size: 16px;
+		border-radius: 0.9vw;
+	}
+	section.database-interaction section form input[type="button"] {
+		cursor: pointer;
+		padding: 5px;
+		font-weight: bold;
+	}
+
+	section.database-interaction section form label {
+		padding: 5px;
+		font-size: 17px;
+		border-radius: 0.9vw;
+		background-color: rgba(19, 1, 13, 0.8);
+	}
+	/*
+			render table sections
+	*/
+	section#user-history-box {
+		color: white;
+		padding: 2%;
+		text-align: center;
+	}
+	section#user-history-box table {
+		background-color: rgba(241, 179, 8, 0.6);
+	}
+	section#user-history-box table td {
+		border: 1px rgb(255, 217, 0) solid;
+		padding: 0.5vw;
+		font-size: 13px;
+	}
+	section#user-history-box table th {
+		background-color: rgb(241, 113, 8);
+		border: 1px rgb(255, 208, 0) solid;
+		padding: 0.7vw;
+		font-size: 14px;
+	}
+	/*
+			FOOTER OF THE WEBSITE
+	*/
+	footer {
+		padding: 2vw;
+		background-color: rgb(2, 3, 39);
+		text-align: center;
+		color: white;
+	}
+
+	footer section.about-footer {
+		display: flex;
+		flex-direction: row;
+		margin-left: 5%;
+		width: 90%;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	footer section.about-footer h4 {
+		font-size: 14px;
+		margin-left: 7px;
+		padding: 1vw;
+		border: 1px solid rgba(40, 43, 102, 0.9);
+		background-color: rgba(11, 13, 49, 0.8);
+		border-radius: 1vw;
+		width: 150px;
+	}
+}
+
+@media (max-width: 790px) and (min-width: 530px) {
+	section.section-weather-info {
+		display: grid;
+		grid-template-columns: 100%;
+	}
+	section.search-city-section {
+		background-color: rgba(17, 197, 122, 0.3);
+		margin-top: 2%;
+		border-radius: 1vw;
+		height: 11vh;
+	}
+	section.search-city-section h2 {
+		font-size: 22px;
+		margin-left: 3%;
+	}
+	section.search-city-section form input {
+		margin-left: 3%;
+		padding: 0.7vw;
+		font-size: 18px;
+		border-radius: 1vw;
+		background-color: #fff;
+		border: blue 1px solid;
+	}
+	section.weather-display-box {
+		background-color: rgba(125, 130, 200, 0.8);
+		border-radius: 1vw;
+		margin-top: 3%;
+	}
+
+	section.current-info {
+		text-align: center;
+	}
+
+	section.current-info h2 {
+		font-size: 20px;
+	}
+	section.current-info section h3,
+	section.date-time-degree h3,
+	section.date-time-degree section h3 {
+		font-size: 19px;
+	}
+	section.current-info section h4,
+	section.date-time-degree section h4 {
+		font-size: 18px;
+	}
+	section.current-info section {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		justify-content: space-around;
+	}
+
+	#weather-status-icon span img {
+		background: transparent;
+		border-radius: 0.9vw;
+	}
+	section.date-time-degree {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		justify-content: space-around;
+		text-align: center;
+	}
+	/*
+		weather forecast
+	*/
+	h4#forecast-additional-info span {
+		text-align: left;
+	}
+	section.weather-forecast {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-bottom: 2%;
+	}
+
+	section.weather-forecast section {
+		border: blue 1px solid;
+		padding: 1%;
+		text-align: center;
+		border-radius: 1vw;
+		background-color: rgba(17, 197, 122, 0.3);
+	}
+	section.weather-forecast section h5 {
+		font-size: 17px;
+	}
+	#additional-weather-info {
+		text-align: left;
+	}
+	#additional-weather-info span {
+		margin-bottom: 5%;
+	}
+	/*
+		sections: save, display, delete weather history and change your name
+	*/
+	section.database-interaction {
+		display: grid;
+		grid-template-columns: auto;
+		align-items: center;
+		align-content: center;
+		margin-bottom: 3%;
+	}
+
+	section.database-interaction section {
+		padding: 1vw;
+		margin-top: 3%;
+		border-radius: 1vw;
+		background-color: rgba(35, 82, 151, 0.8);
+	}
+	section.database-interaction section form {
+		display: grid;
+		grid-template-columns: auto;
+		justify-content: space-around;
+	}
+	section.database-interaction section form * {
+		margin-bottom: 7px;
+	}
+	section.database-interaction section h3 {
+		font-size: 20px;
+	}
+	section.database-interaction section form input {
+		padding: 4px;
+		font-size: 17px;
+		border-radius: 0.9vw;
+	}
+	section.database-interaction section form input[type="button"] {
+		cursor: pointer;
+		padding: 5px;
+		font-weight: bold;
+	}
+
+	section.database-interaction section form label {
+		padding: 5px;
+		font-size: 19px;
+		border-radius: 0.9vw;
+		background-color: rgba(19, 1, 13, 0.8);
+	}
+	/*
+			render table sections
+	*/
+	section#user-history-box {
+		color: white;
+		padding: 2%;
+		text-align: center;
+	}
+	section#user-history-box table {
+		background-color: rgba(241, 179, 8, 0.6);
+	}
+	section#user-history-box table td {
+		border: 1px rgb(255, 217, 0) solid;
+		padding: 0.5vw;
+		font-size: 17px;
+	}
+	section#user-history-box table th {
+		background-color: rgb(241, 113, 8);
+		border: 1px rgb(255, 208, 0) solid;
+		padding: 0.7vw;
+		font-size: 19px;
+	}
+	/*
+			FOOTER OF THE WEBSITE
+	*/
+
+	footer section.about-footer {
+		display: flex;
+		flex-direction: row;
+		margin-left: 5%;
+		width: 90%;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	footer section.about-footer h4 {
+		font-size: 19px;
+		margin-left: 10px;
+		width: 160px;
+	}
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./index.css">
+    <title>City : Weather</title>
+
+    <script type="module">
+        import { init } from './apps/init.js'
+        window.onload = init
+    </script>
+</head>
+
+<body>
+    <main>
+        <section class="section-weather-info">
+            <!--    Search a city -->
+            <section class="search-city-section">
+                <h2>
+                    Enter a city name
+                </h2>
+                <form action="#">
+                    <input type="text" placeholder="City Name" id="search-input-city">
+                    <input type="button" value="Search" id="search-button">
+                </form>
+            </section>
+            <!--    display result box  -->
+            <section class="weather-display-box">
+                <!--    section one -->
+                <section class="current-info">
+                    <h2 id="current-day-title">
+                        Today
+                    </h2>
+                    <section>
+                        <h3 id="location-name">
+                            Location Name
+                        </h3>
+                        <h3 id="weather-status-icon">
+                            Weather status
+                        </h3>
+                        <h4 id="additional-weather-info">
+                            Additional info
+                        </h4>
+                    </section>
+
+                </section>
+                <!--    section two     -->
+                <section class="date-time-degree">
+                    <h3 id="location-data-time">
+                        Date - Time
+                    </h3>
+                    <section>
+                        <h3 id="location-temp">
+                            temperature in °C
+                        </h3>
+                        <h3 id="location-temp-f">
+                            temperature in °F
+                        </h3>
+                    </section>
+                    <section>
+                        <h4 id="forecast-additional-info">
+
+                        </h4>
+                    </section>
+                </section>
+                <hr>
+                <!--        weather forecast        -->
+                <section class="weather-forecast">
+                    <!--    weather forecast for six days are created here      -->
+                </section>
+            </section>
+        </section>
+
+        <!--    sections for saving, searching, deleting and changing the data in database     -->
+        <section class="database-interaction">
+            <!--    section save the current day weather status for later   -->
+            <section>
+                <h3>
+                    Add the today's weather status in the weather history
+                </h3>
+                <form action="#">
+                    <label for="your-name">Add to History</label>
+                    <input type="text" id="your-name" placeholder="Enter your name">
+                    <input type="password" id="add-password" placeholder="Enter your password">
+                    <input type="button" value="Save" id="add-history-button">
+                </form>
+            </section>
+
+            <!--    section search in database for your saved weather status   -->
+            <section>
+                <h3>
+                    Display your weather history by your name and password
+                </h3>
+                <form action="#">
+                    <label for="search-weather-inDB">Display History</label>
+                    <input type="text" id="search-weather-inDB" placeholder="Enter your name">
+                    <input type="password" id="search-password" placeholder="Enter your password">
+                    <input type="button" value="Search" id="search-history-button">
+                </form>
+            </section>
+            <!--    section for changing your name in database  -->
+            <section>
+                <h3>
+                    You can always change your name in the system
+                </h3>
+                <form action="#">
+                    <label for="change-old-name">Change Name</label>
+                    <input type="text" id="change-old-name" placeholder="Enter your old name">
+                    <input type="text" id="change-new-name" placeholder="Enter your new name">
+                    <input type="password" id="change-password" placeholder="Enter your password">
+                    <input type="button" value="Change" id="change-button">
+                </form>
+            </section>
+
+            <!--    section for deleting your weather history from the database   -->
+            <section>
+                <h3>
+                    You can remove your weather history from the database
+                </h3>
+                <form action="#">
+                    <label for="delete-weather-fromDB">Delete History</label>
+                    <input type="text" id="delete-weather-fromDB" placeholder="Enter your name">
+                    <input type="password" id="delete-password" placeholder="Enter your password">
+                    <input type="button" value="Delete" id="delete-button">
+                </form>
+            </section>
+        </section>
+
+        <!--        render or display user's weather history        -->
+
+        <section id="user-history-box">
+
+        </section>
+    </main>
+
+    <!--        Footer of the website       -->
+
+    <footer>
+        <section class="about-footer">
+            <h4>
+                <a href="./about-me.html">ABOUT ME</a>
+            </h4>
+            <h4>
+                <a href="./about-app.html">ABOUT THIS APP</a>
+            </h4>
+            <h4>
+                <a href="./contact-me.html">CONTACT ME</a>
+            </h4>
+        </section>
+        <section class="first-footer-section">
+            <h3>
+                &copy; Created by Sayed Kazimi | 2020
+            </h3>
+
+        </section>
+    </footer>
+    <script src="./apps/api.js" type="module"></script>
+    <script src="./apps/save-weather.js" type="module"></script>
+    <script src="./apps/edit-user-name.js" type="module"></script>
+    <script src="./apps/render-weather-history.js" type="module"></script>
+    <script src="./apps/delete-weather.js" type="module"></script>
+</body>
+
+</html>
