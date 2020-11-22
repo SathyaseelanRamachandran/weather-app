@@ -11,4 +11,10 @@
 
 # Should haves
 
-# Not bad to have
+This part is related to the users or clients need.
+
+If users need more features I will gladly add that to the app
+
+**Waiting for your feedbacks, suggestions, ideas, ...**
+
+# Not bad to haves

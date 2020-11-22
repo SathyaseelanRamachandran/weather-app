@@ -178,10 +178,10 @@ async function fetchData() {
 		}
 		searchInputCity.value = "";
 	} else {
-		alert(
-			`No forecast for the given city name\n Type the city name correctly!\n
-			${forecastDataOW.message}`
-		);
+		// alert(
+		// 	`No forecast for the given city name\n Type the city name correctly!\n
+		// 	${forecastDataOW.message}`
+		// );
 		searchInputCity.value = "";
 		return;
 	}
