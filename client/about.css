@@ -74,6 +74,7 @@ footer section.about-footer {
 }
 
 footer section.about-footer h4 {
+	margin-left: 13px;
 	padding: 1vw;
 	border: 1px solid rgba(40, 43, 102, 0.9);
 	background-color: rgba(11, 13, 49, 0.8);
@@ -185,7 +186,7 @@ footer section.about-footer h4 a {
 	main article {
 		width: 90%;
 		margin-left: 3%;
-		background-color: rgba(211, 231, 231, 0.5);
+		background-color: rgba(15, 116, 116, 0.5);
 		padding: 2%;
 	}
 	/*

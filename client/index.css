@@ -18,12 +18,11 @@ section.search-city-section {
 	background-color: rgba(17, 197, 122, 0.3);
 	margin-top: 12%;
 	border-radius: 1vw;
-	height: 20vh;
+	height: 129px;
 }
 section.search-city-section form input {
 	margin-left: 3%;
 	padding: 0.6vw;
-	font-size: 1.2vw;
 	border-radius: 1vw;
 	background-color: #fff;
 	border: blue 1px solid;
@@ -113,7 +112,6 @@ section.database-interaction section {
 
 section.database-interaction section form input {
 	padding: 0.5vw;
-	font-size: 0.8vw;
 	border-radius: 0.9vw;
 }
 section.database-interaction section form input[type="button"] {
@@ -124,7 +122,6 @@ section.database-interaction section form input[type="button"] {
 
 section.database-interaction section form label {
 	padding: 0.7vw;
-	font-size: 1vw;
 	border-radius: 0.9vw;
 	background-color: rgba(19, 1, 13, 0.8);
 }
@@ -197,7 +194,7 @@ footer section.about-footer h4 a {
 		background-color: rgba(17, 197, 122, 0.3);
 		margin-top: 4%;
 		border-radius: 1vw;
-		height: 11vh;
+		height: 70px;
 	}
 	section.search-city-section h2 {
 		font-size: 12px;
@@ -306,13 +303,14 @@ footer section.about-footer h4 a {
 	section.database-interaction section form {
 		display: grid;
 		grid-template-columns: auto;
-		justify-content: space-around;
+		justify-content: left;
 	}
 	section.database-interaction section form * {
 		margin-bottom: 7px;
+		width: 250px;
 	}
 	section.database-interaction section h3 {
-		font-size: 12px;
+		font-size: 14px;
 	}
 	section.database-interaction section form input {
 		padding: 4px;
@@ -323,11 +321,12 @@ footer section.about-footer h4 a {
 		cursor: pointer;
 		padding: 5px;
 		font-weight: bold;
+		width: 90px;
 	}
 
 	section.database-interaction section form label {
 		padding: 5px;
-		font-size: 13px;
+		font-size: 16px;
 		border-radius: 0.9vw;
 		background-color: rgba(19, 1, 13, 0.8);
 	}
@@ -345,13 +344,13 @@ footer section.about-footer h4 a {
 	section#user-history-box table td {
 		border: 1px rgb(255, 217, 0) solid;
 		padding: 0.5vw;
-		font-size: 9px;
+		font-size: 10px;
 	}
 	section#user-history-box table th {
 		background-color: rgb(241, 113, 8);
 		border: 1px rgb(255, 208, 0) solid;
 		padding: 0.7vw;
-		font-size: 10px;
+		font-size: 11px;
 	}
 	/*
 			FOOTER OF THE WEBSITE
@@ -398,7 +397,7 @@ footer section.about-footer h4 a {
 		background-color: rgba(17, 197, 122, 0.3);
 		margin-top: 4%;
 		border-radius: 1vw;
-		height: 11vh;
+		height: 97px;
 	}
 	section.search-city-section h2 {
 		font-size: 18px;
@@ -499,28 +498,30 @@ footer section.about-footer h4 a {
 	section.database-interaction section form {
 		display: grid;
 		grid-template-columns: auto;
-		justify-content: space-around;
+		justify-content: left;
 	}
 	section.database-interaction section form * {
 		margin-bottom: 7px;
+		width: 330px;
 	}
 	section.database-interaction section h3 {
-		font-size: 18px;
+		font-size: 22px;
 	}
 	section.database-interaction section form input {
 		padding: 4px;
-		font-size: 16px;
+		font-size: 17px;
 		border-radius: 0.9vw;
 	}
 	section.database-interaction section form input[type="button"] {
 		cursor: pointer;
 		padding: 5px;
 		font-weight: bold;
+		width: 90px;
 	}
 
 	section.database-interaction section form label {
 		padding: 5px;
-		font-size: 17px;
+		font-size: 19px;
 		border-radius: 0.9vw;
 		background-color: rgba(19, 1, 13, 0.8);
 	}
@@ -585,16 +586,16 @@ footer section.about-footer h4 a {
 		background-color: rgba(17, 197, 122, 0.3);
 		margin-top: 2%;
 		border-radius: 1vw;
-		height: 11vh;
+		height: 119px;
 	}
 	section.search-city-section h2 {
-		font-size: 22px;
+		font-size: 23px;
 		margin-left: 3%;
 	}
 	section.search-city-section form input {
 		margin-left: 3%;
 		padding: 0.7vw;
-		font-size: 18px;
+		font-size: 20px;
 		border-radius: 1vw;
 		background-color: #fff;
 		border: blue 1px solid;
@@ -610,16 +611,16 @@ footer section.about-footer h4 a {
 	}
 
 	section.current-info h2 {
-		font-size: 20px;
+		font-size: 22px;
 	}
 	section.current-info section h3,
 	section.date-time-degree h3,
 	section.date-time-degree section h3 {
-		font-size: 19px;
+		font-size: 20px;
 	}
 	section.current-info section h4,
 	section.date-time-degree section h4 {
-		font-size: 18px;
+		font-size: 19px;
 	}
 	section.current-info section {
 		display: grid;
@@ -658,7 +659,7 @@ footer section.about-footer h4 a {
 		background-color: rgba(17, 197, 122, 0.3);
 	}
 	section.weather-forecast section h5 {
-		font-size: 17px;
+		font-size: 18px;
 	}
 	#additional-weather-info {
 		text-align: left;
@@ -686,23 +687,25 @@ footer section.about-footer h4 a {
 	section.database-interaction section form {
 		display: grid;
 		grid-template-columns: auto;
-		justify-content: space-around;
+		justify-content: left;
 	}
 	section.database-interaction section form * {
 		margin-bottom: 7px;
+		width: 410px;
 	}
 	section.database-interaction section h3 {
-		font-size: 20px;
+		font-size: 22px;
 	}
 	section.database-interaction section form input {
 		padding: 4px;
-		font-size: 17px;
+		font-size: 18px;
 		border-radius: 0.9vw;
 	}
 	section.database-interaction section form input[type="button"] {
 		cursor: pointer;
 		padding: 5px;
 		font-weight: bold;
+		width: 119px;
 	}
 
 	section.database-interaction section form label {
@@ -750,5 +753,75 @@ footer section.about-footer h4 a {
 		font-size: 19px;
 		margin-left: 10px;
 		width: 160px;
+	}
+}
+
+@media (max-width: 990px) and (min-width: 790px) {
+	section.search-city-section {
+		background-color: rgba(17, 197, 122, 0.3);
+		margin-top: 4%;
+		border-radius: 1vw;
+		height: 179px;
+	}
+	section.search-city-section h2 {
+		font-size: 26px;
+		margin-left: 3%;
+	}
+	section.search-city-section form input[type="text"] {
+		width: 25vw;
+	}
+	section.search-city-section form input {
+		margin-left: 3%;
+		padding: 0.7vw;
+		font-size: 20px;
+		border-radius: 1vw;
+		background-color: #fff;
+		border: blue 1px solid;
+		margin-bottom: 7px;
+	}
+	/*
+		sections: save, display, delete weather history and change your name
+	*/
+	section.database-interaction {
+		display: grid;
+		grid-template-columns: auto;
+		align-items: center;
+		align-content: center;
+		margin-bottom: 3%;
+	}
+
+	section.database-interaction section {
+		padding: 1vw;
+		margin-top: 3%;
+		border-radius: 1vw;
+		background-color: rgba(35, 82, 151, 0.8);
+	}
+	section.database-interaction section form {
+		margin-bottom: 7px;
+	}
+	/* section.database-interaction section form * {
+		margin-bottom: 7px;
+		width: 410px;
+	} */
+	section.database-interaction section h3 {
+		font-size: 25px;
+	}
+	section.database-interaction section form input {
+		padding: 4px;
+		font-size: 18px;
+		border-radius: 0.9vw;
+	}
+	section.database-interaction section form input[type="button"] {
+		cursor: pointer;
+		padding: 5px;
+		font-weight: bold;
+		width: 99px;
+	}
+
+	section.database-interaction section form label {
+		padding: 5px;
+		font-size: 19px;
+		border-radius: 0.9vw;
+		background-color: rgba(19, 1, 13, 0.8);
 	}
 }
