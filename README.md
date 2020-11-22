@@ -1,6 +1,6 @@
 # weather-app
 
-A weather application with possibility that users/clients can save the current weather status for later and display the history later
+A weather application with possibilities that users/clients can save the current weather status for later and display the history later
 
 ---
 
@@ -9,9 +9,9 @@ A weather application with possibility that users/clients can save the current w
 1. Search for weather status of a city
 1. Get enough information about the searched city
 1. Let the clients:
-   1. Store the weather status by name and password
+   1. Store the weather status by name and password in the weather history
    1. Displaying their weather history with the correct credentials(name and password)
-   1. Changing their name in their weather history with the correct credentials(name and password)
+   1. Changing their names in their weather history with the correct credentials(name and password)
    1. Deleting their weather history with the correct credentials(name and password)
 
 ---
@@ -46,7 +46,7 @@ I plan to add more features on this web app if users ask and I also plan to upda
 
 ### Thank you for visiting this repo and reading the README
 
-If you have any suggestion, idea, thought about this app let me know by sending me a message via this app.
+If you have any suggestions, ideas, thoughts about this app let me know by sending me a message via this app.
 
 If you need help to realize your ideas, I can help you with my knowledge of:
 
