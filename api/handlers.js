@@ -18,6 +18,13 @@ const handler = {
 	renderHistory: async (req, res, next) => {
 		const userName = req.params.name;
 		const getPass = req.params.password;
+		if (userName === "" || getPass === "") {
+			res.json({
+				message:
+					"Please enter your name and your password to display your weather history!",
+			});
+			return;
+		}
 		await fs.readFile(DATA_DIR, "UTF-8", (err, data) => {
 			if (err) {
 				console.error("error from read file: ", err);
@@ -42,6 +49,14 @@ const handler = {
 	},
 	saveHistory: async (req, res, next) => {
 		const userName = req.params.name;
+		const weatherInfo = req.body;
+		if (userName === "" || weatherInfo.password === "") {
+			res.json({
+				message:
+					"Please provide a name and a password to save the weather in your weather history!",
+			});
+			return;
+		}
 		let letterNumber = /^[0-9a-zA-Z]+$/;
 
 		if (!userName.match(letterNumber)) {
@@ -51,7 +66,6 @@ const handler = {
 			return;
 		}
 
-		const weatherInfo = req.body;
 		await fs.readFile(DATA_DIR, "UTF-8", (err, data) => {
 			if (err) {
 				console.error("Error from read file Save History: ", err);
@@ -101,6 +115,17 @@ const handler = {
 	},
 	updateHistory: async (req, res, next) => {
 		const namesData = req.body;
+		if (
+			namesData.userOldName === "" ||
+			namesData.password === "" ||
+			namesData.userNewName === ""
+		) {
+			res.json({
+				message:
+					"Please enter your old name, new name and your password to change your name!",
+			});
+			return;
+		}
 		await fs.readFile(DATA_DIR, "UTF-8", (err, data) => {
 			if (err) {
 				console.error("Error from read file Save History: ", err);
@@ -145,6 +170,13 @@ const handler = {
 	deleteHistory: async (req, res, next) => {
 		const userName = req.params.name;
 		const userPass = req.body.password;
+		if (userName === "" || userPass === "") {
+			res.json({
+				message:
+					"Please enter your name and your password to delete your weather history!",
+			});
+			return;
+		}
 		await fs.readFile(DATA_DIR, "UTF-8", (err, data) => {
 			if (err) {
 				console.error("Error from read file Save History: ", err);

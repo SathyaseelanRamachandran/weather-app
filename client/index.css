@@ -184,7 +184,7 @@ footer section.about-footer h4 a {
 
 */
 
-@media (max-width: 390px) and (min-width: 230px) {
+@media (max-width: 390px) and (min-width: 200px) {
 	section.section-weather-info {
 		display: grid;
 		grid-template-columns: 100%;
@@ -307,7 +307,7 @@ footer section.about-footer h4 a {
 	}
 	section.database-interaction section form * {
 		margin-bottom: 7px;
-		width: 250px;
+		width: 220px;
 	}
 	section.database-interaction section h3 {
 		font-size: 14px;

@@ -23,7 +23,7 @@
                     Enter a city name
                 </h2>
                 <form action="#">
-                    <input type="text" placeholder="City Name" id="search-input-city">
+                    <input type="text" placeholder="City Name" id="search-input-city" required>
                     <input type="button" value="Search" id="search-button">
                 </form>
             </section>
@@ -83,8 +83,8 @@
                 </h3>
                 <form action="#">
                     <label for="your-name">Add to History</label>
-                    <input type="text" id="your-name" placeholder="Enter your name">
-                    <input type="password" id="add-password" placeholder="Enter your password">
+                    <input type="text" id="your-name" placeholder="Enter your name" required title="Enter your name">
+                    <input type="password" id="add-password" placeholder="Enter your password" required title="Enter your password">
                     <input type="button" value="Save" id="add-history-button">
                 </form>
             </section>
@@ -96,8 +96,8 @@
                 </h3>
                 <form action="#">
                     <label for="search-weather-inDB">Display History</label>
-                    <input type="text" id="search-weather-inDB" placeholder="Enter your name">
-                    <input type="password" id="search-password" placeholder="Enter your password">
+                    <input type="text" id="search-weather-inDB" placeholder="Enter your name" required title="Enter your name">
+                    <input type="password" id="search-password" placeholder="Enter your password" required title="Enter your password">
                     <input type="button" value="Search" id="search-history-button">
                 </form>
             </section>
@@ -108,9 +108,9 @@
                 </h3>
                 <form action="#">
                     <label for="change-old-name">Change Name</label>
-                    <input type="text" id="change-old-name" placeholder="Enter your old name">
-                    <input type="text" id="change-new-name" placeholder="Enter your new name">
-                    <input type="password" id="change-password" placeholder="Enter your password">
+                    <input type="text" id="change-old-name" placeholder="Enter your old name" required title="Enter your name">
+                    <input type="text" id="change-new-name" placeholder="Enter your new name" required title="Enter your new name">
+                    <input type="password" id="change-password" placeholder="Enter your password" required title="Enter your password">
                     <input type="button" value="Change" id="change-button">
                 </form>
             </section>
@@ -122,8 +122,8 @@
                 </h3>
                 <form action="#">
                     <label for="delete-weather-fromDB">Delete History</label>
-                    <input type="text" id="delete-weather-fromDB" placeholder="Enter your name">
-                    <input type="password" id="delete-password" placeholder="Enter your password">
+                    <input type="text" id="delete-weather-fromDB" placeholder="Enter your name" required title="Enter your name">
+                    <input type="password" id="delete-password" placeholder="Enter your password" required title="Enter your password">
                     <input type="button" value="Delete" id="delete-button">
                 </form>
             </section>

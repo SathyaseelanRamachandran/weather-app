@@ -6,9 +6,30 @@ body {
 main article {
 	width: 60%;
 	margin-left: 20%;
-	background-color: turquoise;
+	background-color: rgb(64, 224, 208);
 	padding: 2%;
 }
+
+section.contacts-links {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: space-around;
+	margin-top: 27px;
+}
+section.contacts-links section a {
+	border: 2px solid rgba(57, 46, 214, 0.5);
+	background-color: rgba(10, 6, 59, 0.8);
+	padding: 17%;
+	text-align: center;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	border-radius: 7px;
+}
+h2.get-inTouch {
+	text-align: center;
+}
+
 /*
 	contact form
 

@@ -1,5 +1,5 @@
 {
- "nextId": 15,
+ "nextId": 21,
  "weather_history_data": [
   {
    "name": "lima",
@@ -27,20 +27,6 @@
      "Overcast"
     ],
     "temperature": "11 °C"
-   }
-  },
-  {
-   "name": "Julia",
-   "password": "julia12345",
-   "id": 3,
-   "city": "Moscow",
-   "country": "Russia",
-   "time_data": "2020-11-14 12:31",
-   "weather_status": {
-    "current_status": [
-     "Overcast"
-    ],
-    "temperature": "2 °C"
    }
   },
   {
@@ -195,6 +181,76 @@
      "Partly cloudy"
     ],
     "temperature": "3 °C"
+   }
+  },
+  {
+   "name": "Khalil",
+   "password": "Khalil12345",
+   "id": 15,
+   "city": "Ghazni",
+   "country": "Afghanistan",
+   "time_data": "2020-11-25 01:12",
+   "weather_status": {
+    "current_status": [
+     "Moderate or heavy snow showers"
+    ],
+    "temperature": "0 °C"
+   }
+  },
+  {
+   "name": "Khalil",
+   "password": "Khalil12345",
+   "id": 16,
+   "city": "Ankara",
+   "country": "Turkey",
+   "time_data": "2020-11-25 00:56",
+   "weather_status": {
+    "current_status": [
+     "Clear"
+    ],
+    "temperature": "1 °C"
+   }
+  },
+  {
+   "name": "Khalil",
+   "password": "Khalil12345",
+   "id": 17,
+   "city": "Ghent",
+   "country": "Belgium",
+   "time_data": "2020-11-24 22:58",
+   "weather_status": {
+    "current_status": [
+     "Clear"
+    ],
+    "temperature": "6 °C"
+   }
+  },
+  {
+   "name": "Khalil",
+   "password": "Khalil12345",
+   "id": 18,
+   "city": "Brussels",
+   "country": "Belgium",
+   "time_data": "2020-11-24 22:58",
+   "weather_status": {
+    "current_status": [
+     "Clear"
+    ],
+    "temperature": "6 °C"
+   }
+  },
+  {
+   "name": "Khalil",
+   "password": "",
+   "id": 19,
+   "city": "Kabul",
+   "country": "Afghanistan",
+   "time_data": "2020-11-25 02:33",
+   "weather_status": {
+    "current_status": [
+     "Light Rain, Mist"
+    ],
+    "temperature": "2 °C"
    }
   }
  ]

@@ -186,5 +186,11 @@ async function fetchData() {
 		return;
 	}
 }
-
+// display the weather status by clicking the search button or Enter key
 searchButton.onclick = fetchData;
+function run(event) {
+	if (event.keyCode === 13) {
+		fetchData();
+	}
+}
+searchInputCity.addEventListener("keyup", run);
