@@ -1,0 +1,42 @@
+{
+    "title": "weather app schema",
+    "description": "weather status history for each user or users can save the today's weather status for later",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "number"
+        },
+        "password": {
+            "type": "string",
+            "minimus": 5
+        },
+        "name": {
+            "type": "string",
+            "minimum": 2
+        },
+        "country": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "time_data": {
+            "type": "string"
+        },
+        "weather_status": {
+            "type": "object",
+            "properties": {
+                "current_status": {
+                    "type": "array"
+                },
+                "temperature": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "required": [
+        "name",
+        "password"
+    ]
+}

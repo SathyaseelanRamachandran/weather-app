@@ -16,8 +16,8 @@ const USERS_MESSAGES_DIR = path.join(
 
 const handler = {
 	renderHistory: async (req, res, next) => {
-		const userName = req.params.name;
-		const getPass = req.params.password;
+		const userName = req.body.first;
+		const getPass = req.body.second;
 		if (userName === "" || getPass === "") {
 			res.json({
 				message:

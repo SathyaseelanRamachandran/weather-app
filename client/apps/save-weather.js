@@ -9,13 +9,6 @@ const saveFunction = async (event) => {
 	const userName = theName.value;
 	const pasVal = userPassword.value;
 	sendToSave.password = pasVal;
-	// let bodyContent = {
-	// 	city: sendToSave.city,
-	// 	country: sendToSave.country,
-	// 	time: sendToSave.time,
-	// 	status: sendToSave.status,
-	// 	temp: sendToSave.temp,
-	// };
 
 	const res = await fetch(`/api/history/${userName}`, {
 		method: "POST",
@@ -26,9 +19,7 @@ const saveFunction = async (event) => {
 	});
 
 	if (!res.ok) {
-		alert(
-			"Something went wrong!\nDid you used any special characters?\nSuch as: / or back slash "
-		);
+		alert("Something went wrong!\nPlease try again ");
 		console.log("error from save-weather.js, res is: ", res);
 	} else {
 		const data = await res.json();

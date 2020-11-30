@@ -7,22 +7,14 @@ const path = require("path");
 const api = require("./api");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const morgan = require("morgan");
-const fs = require("fs");
+
+const logger = require("./logger");
 app.use(cors());
 
+app.use(logger);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(
-	morgan("combined", {
-		stream: fs.createWriteStream(path.join(__dirname, "access.log"), {
-			flags: "a",
-		}),
-	})
-);
-if (config.MODE === "development") {
-	app.use(morgan("dev"));
-}
+
 app.use("/", express.static(path.join(__dirname, "client")));
 
 app.use("/api", api);

@@ -1,16 +1,30 @@
 "use strict";
 
 let renderBox = document.getElementById("user-history-box");
-let getUserName = document.getElementById("search-weather-inDB");
-let checkPass = document.getElementById("search-password");
+let unFirst = document.getElementById("search-weather-inDB");
+let upSecond = document.getElementById("search-password");
 const searchHistoryButton = document.getElementById("search-history-button");
 
 const renderFunction = async () => {
 	renderBox.innerHTML = "";
-	const UserName = getUserName.value;
-	const currentPass = `${checkPass.value}`;
-	const res = await fetch(`/api/history/${UserName}/${currentPass}`);
+	const first = unFirst.value;
+	const second = upSecond.value;
+	const res = await fetch(`/api/renderhistory`, {
+		method: "POST",
+		body: JSON.stringify({
+			first: first,
+			second: second,
+		}),
+		headers: {
+			"content-type": "application/json; charset=UTF-8",
+		},
+	});
 	const data = await res.json();
+	if (!res.ok) {
+		alert("Something went wrong, please try again!");
+		console.log("Error from renderf, res is not ok: ", res);
+		return;
+	}
 	if (data.message) {
 		alert(data.message);
 		getUserName.value = "";

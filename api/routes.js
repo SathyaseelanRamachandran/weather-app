@@ -3,7 +3,8 @@
 const express = require("express");
 const router = express.Router();
 const handlers = require("./handlers.js");
-router.get("/history/:name/:password", handlers.renderHistory);
+router.post("/renderhistory", handlers.renderHistory);
+//router.get("/renderhistory/:name/:password", handlers.renderHistory);
 router.post("/history/:name", handlers.saveHistory);
 router.put("/history", handlers.updateHistory);
 router.delete("/history/:name", handlers.deleteHistory);

@@ -1,5 +1,5 @@
 {
- "nextId": 22,
+ "nextId": 21,
  "weather_history_data": [
   {
    "name": "lima",
@@ -251,20 +251,6 @@
      "Light Rain, Mist"
     ],
     "temperature": "2 °C"
-   }
-  },
-  {
-   "name": "Khalil",
-   "password": "Khalil12345",
-   "id": 21,
-   "city": "Ghazni",
-   "country": "Afghanistan",
-   "time_data": "2020-11-30 19:29",
-   "weather_status": {
-    "current_status": [
-     "Partly cloudy"
-    ],
-    "temperature": "7 °C"
    }
   }
  ]
