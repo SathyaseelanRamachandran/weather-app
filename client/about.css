@@ -9,12 +9,16 @@ main article {
 	background-color: rgb(64, 224, 208);
 	padding: 2%;
 }
-
+main article section h2 {
+	background-color: rgba(12, 87, 90, 0.322);
+	padding: 5px 3px;
+}
 section.contacts-links {
-	display: grid;
-	grid-template-columns: auto auto auto;
+	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
 	margin-top: 27px;
+	margin-bottom: 27px;
 }
 section.contacts-links section a {
 	border: 2px solid rgba(57, 46, 214, 0.5);
@@ -84,6 +88,9 @@ header {
 	text-align: center;
 	color: white;
 }
+footer {
+	margin-top: 10%;
+}
 
 footer section.about-footer {
 	display: flex;
@@ -118,7 +125,7 @@ footer section.about-footer h4 a {
 		width: 90%;
 		margin-left: 3%;
 		background-color: rgba(5, 53, 53, 0.5);
-		padding: 2%;
+		padding: 3%;
 	}
 	/*
 		contact form
@@ -169,6 +176,7 @@ footer section.about-footer h4 a {
 		margin-left: 65%;
 		border-radius: 8px;
 	}
+
 	footer,
 	header {
 		padding: 2vw;
@@ -176,7 +184,23 @@ footer section.about-footer h4 a {
 		text-align: center;
 		color: white;
 	}
+	footer {
+		margin-top: 10%;
+	}
+	main article section.contacts-links {
+		margin-top: 28px;
+		margin-bottom: 28px;
+	}
+	section.contacts-links section a {
+		border: 1px solid rgba(57, 46, 214, 0.5);
+		background-color: rgba(10, 6, 59, 0.8);
+		padding: 7%;
+		text-align: center;
+		text-decoration: none;
+		color: rgb(255, 255, 255);
 
+		border-radius: 7px;
+	}
 	footer section.about-footer {
 		display: flex;
 		flex-direction: row;
@@ -258,6 +282,13 @@ footer section.about-footer h4 a {
 		cursor: pointer;
 		margin-left: 65%;
 		border-radius: 8px;
+	}
+	footer {
+		margin-top: 10%;
+	}
+	main article section.contacts-links {
+		margin-top: 28px;
+		margin-bottom: 28px;
 	}
 	footer,
 	header {
