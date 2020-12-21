@@ -27,7 +27,8 @@ const renderFunction = async () => {
 	}
 	if (data.message) {
 		alert(data.message);
-		getUserName.value = "";
+		unFirst.value = "";
+		upSecond.value = "";
 		return;
 	}
 	let tableBox = document.createElement("table");
@@ -84,8 +85,14 @@ const renderFunction = async () => {
 	// append the table to the html website
 	renderBox.appendChild(tableBox);
 
-	getUserName.value = "";
-	checkPass.value = "";
+	unFirst.value = "";
+	upSecond.value = "";
 };
 
 searchHistoryButton.onclick = renderFunction;
+upSecond.onkeyup = function (event) {
+	if (event.keyCode !== 13) {
+		return;
+	}
+	renderFunction();
+};

@@ -1,8 +1,8 @@
 "use strict";
 
 const fs = require("fs");
-
-const path = `./data/logs.txt`;
+const path = require("path");
+const logsPath = path.join(__dirname, "..", `/data/logs.txt`);
 
 const logs = (req, res, next) => {
 	const reqTime = new Date();
@@ -12,7 +12,7 @@ const logs = (req, res, next) => {
 	const connections = req.headers["user-agent"];
 	const reqResults = `${reqMethod} ${reqUrl} REQTIME: ${reqTime} user-agent: ${connections}`;
 
-	fs.appendFile(path, `${reqResults}\n`, (err) => {
+	fs.appendFile(logsPath, `${reqResults}\n`, (err) => {
 		if (err) {
 			console.error("Error from writing logs: ", err);
 		}

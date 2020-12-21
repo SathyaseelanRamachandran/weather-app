@@ -1,6 +1,7 @@
 node_modules
 access.log
-
 userclick
 interactions.js
+saveclicks.js
+users-feedback.js
 

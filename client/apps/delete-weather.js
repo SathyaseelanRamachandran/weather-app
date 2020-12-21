@@ -29,3 +29,9 @@ const deleteFunction = async () => {
 };
 
 deleteButton.onclick = deleteFunction;
+deletePass.onkeyup = function (event) {
+	if (event.keyCode !== 13) {
+		return;
+	}
+	deleteFunction();
+};

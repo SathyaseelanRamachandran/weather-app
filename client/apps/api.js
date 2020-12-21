@@ -1,6 +1,6 @@
 "use strict";
 // get HTML elements
-let searchInputCity = document.getElementById("search-input-city");
+const searchInputCity = document.getElementById("search-input-city");
 const searchButton = document.getElementById("search-button");
 const currentDayTitle = document.getElementById("current-day-title");
 const locationName = document.getElementById("location-name");
@@ -36,7 +36,6 @@ async function fetchData() {
 		return;
 	}
 	const data = await res.json();
-	console.log("data from weatherstack: ", data);
 	// seven days of the week
 	const daysArr = [
 		"Sunday",
@@ -68,8 +67,6 @@ async function fetchData() {
 	locationName.innerHTML = `<span>${city}</span><br><br><span>${country}</span>`;
 	pageTitle.innerHTML = `${city} | ${country}`;
 	/*
-	 *
-	 *
 	 */
 	weatherStatusIcon.innerHTML = "";
 	let spanIcon = document.createElement("span");
@@ -134,7 +131,6 @@ async function fetchData() {
 
 	const forecastResOW = await fetch(forecastBaseUrlOW);
 	const forecastDataOW = await forecastResOW.json();
-	console.log("forecast openweather: ", forecastDataOW);
 	weatherForecast.innerHTML = "";
 	if (forecastDataOW.list) {
 		for (let i = 0; i < forecastDataOW.list.length; i++) {
@@ -178,19 +174,16 @@ async function fetchData() {
 		}
 		searchInputCity.value = "";
 	} else {
-		// alert(
-		// 	`No forecast for the given city name\n Type the city name correctly!\n
-		// 	${forecastDataOW.message}`
-		// );
 		searchInputCity.value = "";
 		return;
 	}
 }
 // display the weather status by clicking the search button or Enter key
 searchButton.onclick = fetchData;
-function run(event) {
-	if (event.keyCode === 13) {
-		fetchData();
+
+searchInputCity.onkeyup = function (event) {
+	if (event.keyCode !== 13) {
+		return;
 	}
-}
-searchInputCity.addEventListener("keyup", run);
+	fetchData();
+};

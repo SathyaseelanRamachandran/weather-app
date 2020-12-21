@@ -30,7 +30,12 @@ const editFunction = async (event) => {
 	oldName.value = "";
 	newName.value = "";
 	changePass.value = "";
-	event.preventDefault();
 };
 
 changeButton.onclick = editFunction;
+changePass.onkeyup = function (event) {
+	if (event.keyCode !== 13) {
+		return;
+	}
+	editFunction();
+};

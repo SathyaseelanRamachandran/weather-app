@@ -27,7 +27,12 @@ const saveFunction = async (event) => {
 	}
 	theName.value = "";
 	userPassword.value = "";
-	event.preventDefault();
 };
 
 saveButton.onclick = saveFunction;
+userPassword.onkeyup = function (event) {
+	if (event.keyCode !== 13) {
+		return;
+	}
+	saveFunction();
+};

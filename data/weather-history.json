@@ -1,5 +1,5 @@
 {
- "nextId": 22,
+ "nextId": 25,
  "weather_history_data": [
   {
    "name": "lima",
@@ -265,6 +265,34 @@
      "Partly cloudy"
     ],
     "temperature": "7 °C"
+   }
+  },
+  {
+   "name": "Khalil",
+   "password": "Khalil12345",
+   "id": 22,
+   "city": "Ghent",
+   "country": "Belgium",
+   "time_data": "2020-12-22 00:10",
+   "weather_status": {
+    "current_status": [
+     "Overcast"
+    ],
+    "temperature": "13 °C"
+   }
+  },
+  {
+   "name": "canada",
+   "password": "canada",
+   "id": 24,
+   "city": "Ottawa",
+   "country": "Canada",
+   "time_data": "2020-12-21 18:21",
+   "weather_status": {
+    "current_status": [
+     "Light Snow"
+    ],
+    "temperature": "1 °C"
    }
   }
  ]

@@ -1,10 +1,10 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url("./images/6.jpg");
+	background-image: url("./images/7.jpg");
 	background-color: rgba(44, 65, 158, 0.5);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-size: contain;
+	background-repeat: repeat;
 	color: #fff;
 }
 
@@ -185,6 +185,15 @@ footer section.about-footer h4 a {
 */
 
 @media (max-width: 390px) and (min-width: 200px) {
+	body {
+		margin: 0;
+		padding: 0;
+		background-image: url("./images/5.jpg");
+		background-color: rgba(44, 65, 158, 0.5);
+		background-size: contain;
+		background-repeat: repeat;
+		color: #fff;
+	}
 	section.section-weather-info {
 		display: grid;
 		grid-template-columns: 100%;
@@ -388,6 +397,15 @@ footer section.about-footer h4 a {
 */
 
 @media (max-width: 530px) and (min-width: 390px) {
+	body {
+		margin: 0;
+		padding: 0;
+		background-image: url("./images/3.jpg");
+		background-color: rgba(44, 65, 158, 0.5);
+		background-size: contain;
+		background-repeat: repeat;
+		color: #fff;
+	}
 	section.section-weather-info {
 		display: grid;
 		grid-template-columns: 100%;
@@ -578,6 +596,15 @@ footer section.about-footer h4 a {
 }
 
 @media (max-width: 790px) and (min-width: 530px) {
+	body {
+		margin: 0;
+		padding: 0;
+		background-image: url("./images/6.jpg");
+		background-color: rgba(44, 65, 158, 0.5);
+		background-size: contain;
+		background-repeat: repeat;
+		color: #fff;
+	}
 	section.section-weather-info {
 		display: grid;
 		grid-template-columns: 100%;
@@ -757,6 +784,15 @@ footer section.about-footer h4 a {
 }
 
 @media (max-width: 990px) and (min-width: 790px) {
+	body {
+		margin: 0;
+		padding: 0;
+		background-image: url("./images/image-two.jpg");
+		background-color: rgba(44, 65, 158, 0.5);
+		background-size: contain;
+		background-repeat: repeat;
+		color: #fff;
+	}
 	section.search-city-section {
 		background-color: rgba(17, 197, 122, 0.3);
 		margin-top: 4%;
